@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Radspan — Advanced Defense Systems</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="Gallery.css" />
+</head>
+<body>
+
+  <!-- NAV -->
+<header class="nav hidden-nav"> 
+      <div class="nav-inner">
+      <a class="brand" href="#home">
+  <img src="Radspan.png" alt="Radspan logo" class="logo">
+  <span class="brand-heading">Radspan Defense Systems</span>
+</a>
+
+
+      <nav class="nav-links">
+        <a href="index.html" class="nav-link ">Home</a>
+        <a href="products.html" class="nav-link">Products</a>
+        <a href="Gallery.html" class="nav-link">Gallery</a>
+        <a href="about.html" class="nav-link">About Us</a>
+        <a href="caree.html" class="nav-link">Careers</a>
+      </nav>
+    </div>
+  </header>
+  <section class="gallery">
+    <div class="gallery-header">
+      <h1>Project Gallery</h1>
+      <p>
+        Explore our cutting-edge defense technology solutions in action.
+        From radar systems to drone-based measurements, witness innovation
+        protecting global security.
+      </p>
+    </div>
+
+    <!-- Filter Buttons -->
+    <div class="filter-buttons">
+      <button class="active" data-filter="all"><i class="fa-solid fa-shield-halved"></i> All Projects</button>
+      <button data-filter="rcs"><i class="fa-solid fa-bullseye"></i> RCS Systems</button>
+      <button data-filter="drone"><i class="fa-solid fa-drone"></i> Drone Systems</button>
+      <button data-filter="cad"><i class="fa-solid fa-laptop-code"></i> CAD Systems</button>
+      <button data-filter="radar"><i class="fa-solid fa-satellite-dish"></i> Radar Systems</button>
+      <button data-filter="live"><i class="fa-solid fa-play"></i> Live Demos</button>
+    </div>
+
+    <!-- Gallery Grid -->
+    <div class="gallery-grid">
+      <!-- RCS Systems -->
+      <div class="gallery-item" data-category="rcs">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/1a/USA_night_lights_2012.jpg" alt="RCS Map">
+        <div class="info">
+          <h3>RCS System – Global Coverage</h3>
+          <p>This system provides detailed radar cross-section mapping across global regions, 
+          enabling advanced defense monitoring and situational awareness.</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="rcs">
+        <img src="https://images.unsplash.com/photo-1549924231-f129b911e442" alt="RCS Antenna">
+        <div class="info">
+          <h3>Advanced RCS Antenna</h3>
+          <p>High-frequency antenna designed to analyze radar signatures of objects with 
+          precision for stealth evaluation and defense planning.</p>
+        </div>
+      </div>
+
+      <!-- Drone Systems -->
+      <div class="gallery-item" data-category="drone">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/8/83/DJI_Phantom_4_Pro%2B.jpg" alt="Drone">
+        <div class="info">
+          <h3>Surveillance Drone</h3>
+          <p>Equipped with state-of-the-art sensors and cameras, this drone supports 
+          real-time reconnaissance and field operations.</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="drone">
+        <img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d" alt="Drone Surveillance">
+        <div class="info">
+          <h3>Drone in Flight</h3>
+          <p>Used for aerial monitoring and mission-based surveillance to ensure 
+          security in high-risk environments.</p>
+        </div>
+      </div>
+
+      <!-- CAD Systems -->
+      <div class="gallery-item" data-category="cad">
+        <img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085" alt="CAD Software">
+        <div class="info">
+          <h3>3D CAD Modeling</h3>
+          <p>Software tools that allow engineers to build, test, and optimize 
+          defense prototypes virtually before production.</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="cad">
+        <img src="https://images.unsplash.com/photo-1555949963-ff9fe0c870eb" alt="CAD Analysis">
+        <div class="info">
+          <h3>Simulation & Analysis</h3>
+          <p>Detailed analysis of aerodynamics and structural performance 
+          using high-end CAD simulations.</p>
+        </div>
+      </div>
+
+      <!-- Radar Systems -->
+      <div class="gallery-item" data-category="radar">
+        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475" alt="Radar Station">
+        <div class="info">
+          <h3>Radar Station</h3>
+          <p>Ground-based radar stations capable of long-range object 
+          detection for military and civilian purposes.</p>
+        </div>
+      </div>
+      <div class="gallery-item" data-category="radar">
+        <img src="https://images.unsplash.com/photo-1494172961521-33799ddd43a5" alt="Radar System">
+        <div class="info">
+          <h3>Aerial Tracking Radar</h3>
+          <p>Radar systems designed to track fast-moving airborne objects 
+          with high accuracy.</p>
+        </div>
+      </div>
+
+      <!-- Live Demos (Videos) -->
+      <div class="gallery-item video" data-category="live">
+        <video controls>
+          <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>RCS Demo</h3>
+          <p>Demonstration of radar cross-section measurements recorded 
+          during field trials.</p>
+        </div>
+      </div>
+      <div class="gallery-item video" data-category="live">
+        <video controls>
+          <source src="https://interactive-examples.mdn.mozilla.net/media/cc0-videos/flower.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Drone Test Video</h3>
+          <p>Flight demo of drone prototypes showcasing maneuverability 
+          and sensor performance.</p>
+        </div>
+      </div>
+      <div class="gallery-item video" data-category="live">
+        <video controls>
+          <source src="https://www.w3schools.com/html/movie.mp4" type="video/mp4">
+        </video>
+        <div class="info">
+          <h3>Radar Tracking in Action</h3>
+          <p>Live tracking of objects using advanced radar systems in a 
+          real-world operational test.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+ <footer class="footer">
+    <div class="container footer-flex">
+      <div class="footer-left">
+        <img src="Radspan.png" alt="Radspan" class="logo-footer">
+        <p class="footer-desc">
+          Leading innovator in advanced defense systems, wireless technologies, and radar solutions. 
+          Protecting nations and critical infrastructure with cutting-edge technology.
+        </p>
+        <div class="contact">
+          <p><i class="fa-solid fa-location-dot"></i> Amrita Technology Business Incubator,<br>
+            Amrita Vishwa Vidyapeetham, Choodasandra, Bengaluru 560035, India</p>
+          <p><i class="fa-solid fa-envelope"></i> contact@radspan.com</p>
+          <p><i class="fa-solid fa-phone"></i> +91 80 2834 0000</p>
+        </div>
+      </div>
+
+      <div class="footer-right">
+        <div>
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#products">Products</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#careers">Careers</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Our Solutions</h4>
+          <ul>
+            <li>CAD &amp; HIL Systems</li>
+            <li>RCS Measurement</li>
+            <li>Antenna Calibration</li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>Legal</h4>
+          <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2025 Radspan Defense Technologies. All Rights Reserved.</p>
+      <div class="social-links">
+        <a href="#"><i class="fab fa-linkedin"></i></a>
+        <a href="#"><i class="fab fa-twitter"></i></a>
+        <a href="#"><i class="fab fa-youtube"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script>// Filter functionality
+const buttons = document.querySelectorAll(".filter-buttons button");
+const items = document.querySelectorAll(".gallery-item");
+
+buttons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    // update active button
+    buttons.forEach(b => b.classList.remove("active"));
+    btn.classList.add("active");
+
+    const filter = btn.getAttribute("data-filter");
+
+    items.forEach(item => {
+      if (filter === "all" || item.getAttribute("data-category") === filter) {
+        item.style.display = "block";
+      } else {
+        item.style.display = "none";
+      }
+      
+    });
+    const nav = document.querySelector('.nav');
+let lastScrollY = window.scrollY;
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > lastScrollY && window.scrollY > 100) {
+    // scrolling down
+    nav.classList.add('hidden');
+  } else {
+    // scrolling up
+    nav.classList.remove('hidden');
+  }
+  lastScrollY = window.scrollY;
+  });
+  });
+
+});</script>
+</body>
+</html>
